@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+message Empty {};
+
+message LongParam {
+    int64 value = 1;
+}
+
+message EightLongsParam {
+    int64 long1 = 1;
+    int64 long2 = 2;
+    int64 long3 = 3;
+    int64 long4 = 4;
+    int64 long5 = 5;
+    int64 long6 = 6;
+    int64 long7 = 7;
+    int64 long8 = 8;
+}
+
+message StrParam {
+    string value = 1;
+}
+
+message ComplexParam {
+    bytes complex = 1;
+}
+
+service RemoteTester {
+    rpc EmptyCall(Empty) returns (Empty) {}
+    rpc LongCall(LongParam) returns (LongParam) {}
+    rpc EightLongCalls(EightLongsParam) returns (LongParam) {}
+    rpc StrCall(StrParam) returns (StrParam) {}
+    rpc ComplexCall(ComplexParam) returns (ComplexParam) {}
+}
