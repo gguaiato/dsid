@@ -1,14 +1,18 @@
-Instalar (UBUNTU):
+# Instalar (UBUNTU):
 
 sudo apt-get install python3
 
-sudo apt-get install libpq-dev python-dev libxml2-dev libxslt1-dev zlib1g-dev libldap2-dev libsasl2-dev libffi-dev
+sudo apt-get install libpq-dev python-dev libxml2-dev libxslt1-dev zlib1g-dev libffi-dev
 
 sudo apt-get install build-essential
 
 sudo apt-get install python-pip
 
+sudo pip install Cython
 
-Dentro do diretorio do projeto, instalar os requerimentos utilizando:
+sudo pip install statistics
+
+
+# Dentro do diretorio do projeto, instalar os requerimentos utilizando:
 
 sudo pip install -r requirements.txt
