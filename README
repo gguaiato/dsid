@@ -1,4 +1,4 @@
-# Instalar (UBUNTU):
+## --- INSTRUÇÕES DE INSTALAÇÃO --- ##
 
 apt-get install python3
 
@@ -12,4 +12,31 @@ pip3 install statistics
 
 pip3 install -r requirements.txt
 
-# PS: caso retorne permissão negada, logar como super user com o comando: sudo su
+# Caso retorne permissão negada, logar como super user com o comando: sudo su
+
+
+
+## --- INSTRUÇÕES DE EXECUÇAO --- ##
+
+## Antes de executar os comandos, executar 'make' no diretório raiz para contrução do ambiente utilizando o arquivo Makefile
+
+## gRPC servidor
+
+make run-server-grpc
+
+## gRPC cliente
+
+make run-client-grpc
+
+## XML-RPC servidor
+
+make run-server-xmlrpc
+
+## XML-RPC cliente
+
+make run-client-xmlrpc
+
+## Caso queira executar servidor e cliente em ambiente distinto, basta exportar a variável 'PORT' para especificar uma porta
+## e o 'ENDPOINT' para especificar o IP do servidor. Tais configurações se encontram no arquivo settings.py
+
+
